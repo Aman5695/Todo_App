@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  font-size: 60.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.main-div{
+  border: 2px solid red;
   min-height: 100vh;
+  background: rgb(190, 247, 239);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.content-div{
+  text-align: center;
+  margin-top: 12rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content-div figure img{
+  width: 20rem;
+  height: 20rem;
 }
+
+.content-div figcaption{
+  color: rgb(3, 3, 3);
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+
+input{
+  height: 4rem;
+  min-width: 50rem;
+  border-radius: 2.5rem;
+  font-size: 2rem;
+  padding: 2rem 2rem;
+  line-height: 1.42;
+  margin-top: 3rem;
+  color: rgb(41, 41, 40);
+  background-color: #fff;
+  border: 0.2rem solid #ccc;
+  /* box-shadow:inset 0 0.1rem 0.1rem rgb(0 0 0 / 8%);
+  transition: border-color ease-in-out 0.15s/box-shadow ease-in-out 0.15s; */
+}
+
+input,
+ input:focus,
+ input:active,
+ input:active:focus{
+   border: none;
+   padding: 2.3rem 1.5rem;
+   outline: none;
+ }
+
+ .fas{
+   margin-left: -2.5rem;
+   cursor: pointer;
+   pointer-events: auto;
+   z-index: 10;
+   background-color: #fff;
+   color: rgb(50, 54, 50);
+   font-size: 2rem;
+   transition: color 0.25s linear;
+  
+ }
+
+ .fas:hover{
+   color: rgb(47, 214, 122);
+ }
+
+ .fa-plus:before{
+content: "\f067";
+font-size: 1.5rem;
+ }
+
+ .showitems{
+   margin-top: 8rem;
+   text-align: center;
+ }
+
+ .eachitem{
+   background: #fff;
+   height: 4rem;
+   padding: 1.2rem 1rem;
+   border-radius: 2.5rem;
+   margin-bottom: 1rem;
+   width: 50rem;
+   word-break: break-word;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .eachitem:hover{
+   background: black;
+   color: white;
+ }
+
+ .showitems .eachitem h2{
+   padding-left: 1rem;
+   font-size: 2rem;
+   /* color: #fff; */
+
+ }
+
+ .fa-trash-alt, .fa-edit{
+   cursor: pointer;
+   pointer-events: auto;
+   z-index: 10;
+   /* color: rgb(251, 251, 251); */
+   transition: color 0.25s linear;
+   font-size: 2rem;
+ }
+
+ .fa-trash-alt:hover{
+   color: red;
+ }
+
+ button{
+   letter-spacing: 0.1rem;
+   cursor: pointer;
+   font-size: 3rem;
+   font-weight: bolder;
+   line-height: 45px;
+    position: relative;
+    text-transform: uppercase;
+   width: 80%;
+   border-radius: 2rem;
+  background-color: green;
+ }
+
+ button:hover{
+   background-color: red;
+   color: white;
+ }
