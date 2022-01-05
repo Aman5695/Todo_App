@@ -39,7 +39,7 @@ html{
 
 input{
   height: 4rem;
-  min-width: 50rem;
+  min-width: 40vw;
   border-radius: 2.5rem;
   font-size: 2rem;
   padding: 2rem 2rem;
@@ -90,10 +90,12 @@ font-size: 1.5rem;
  .eachitem{
    background: #fff;
    height: 4rem;
-   padding: 1.2rem 1rem;
+   padding: 2rem 2rem;
    border-radius: 2.5rem;
    margin-bottom: 1rem;
-   width: 50rem;
+   min-width: 42vw; 
+   border: 0.2rem solid #ccc;
+   font-size: 2rem;
    word-break: break-word;
    display: flex;
    justify-content: space-between;
@@ -106,7 +108,7 @@ font-size: 1.5rem;
  }
 
  .showitems .eachitem h2{
-   padding-left: 1rem;
+   /* padding-left: 1rem; */
    font-size: 2rem;
    /* color: #fff; */
 
@@ -133,7 +135,7 @@ font-size: 1.5rem;
    line-height: 45px;
     position: relative;
     text-transform: uppercase;
-   width: 80%;
+   width: 50vw;
    border-radius: 2rem;
   background-color: green;
  }
