@@ -123,6 +123,13 @@ font-size: 1.5rem;
    font-size: 2rem;
  }
 
+ .fa-edit:hover{
+  color: greenyellow;
+ }
+ .fa-edit{
+  margin-left: -2.9rem;
+ }
+
  .fa-trash-alt:hover{
    color: red;
  }
@@ -144,3 +151,9 @@ font-size: 1.5rem;
    background-color: red;
    color: white;
  }
+
+ .todo-btn {
+  width: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
